@@ -1,0 +1,121 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+nav {
+  background-color: lightcoral;
+  overflow: hidden;
+}
+
+nav a {
+  float: left;
+  display: block;
+  color: black;
+  padding: 14px 16px;
+  font-weight: bold;
+  margin-left: 90px;
+  text-align: center;
+  letter-spacing: 3px;
+}
+
+nav img {
+  height: 30px;
+  width: 30px;
+  text-align: center;
+}
+.container {
+  background-color: pink;
+  height: 700px;
+
+  width: 783px;
+  float: left;
+}
+.image {
+  float: right;
+  /* width: 746px; */
+}
+
+.container h1 {
+  margin-top: 100px;
+  letter-spacing: 5px;
+  margin-left: 80px;
+}
+.container p {
+  margin-left: 80px;
+  margin-top: 0px;
+}
+
+button {
+  margin-left: 80px;
+  padding: 10px;
+  background-color: indianred;
+  width: 200px;
+}
+
+.image-thrid {
+  float: right;
+  margin-right: 750px;
+  margin-top: -255px;
+}
+.images-total {
+  margin-top: 705px;
+  background-color: pink;
+}
+
+.click-container {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.click-container img {
+  margin-left: 10px;
+  margin-top: -20px;
+}
+
+.click-container p {
+  margin-left: 80px;
+}
+
+.last-one {
+  background-color: indianred;
+  width: 350px;
+  height: 200px;
+
+  margin-left: 800px;
+  position: relative;
+  top: -350px;
+}
+.last-one p {
+  margin-top: 200px;
+  margin-left: 5px;
+}
+.click-container p {
+  margin-top: -5px;
+}
+
+.image-one {
+  position: relative;
+  top: 115px;
+  margin-left: 350px;
+}
+
+.image-second {
+  position: relative;
+  top: 120px;
+  margin-left: 350px;
+}
+.last-one h1 {
+  letter-spacing: 5px;
+}
+button{
+  color: white;
+  border: none;
+}
+
+@media screen and (min-width: 480px) {
+}
+
+@media screen and (min-width: 768px) {
+}
