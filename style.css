@@ -1,121 +1,80 @@
-body {
+/* Reset styles */
+* {
   margin: 0;
-  font-family: Arial, sans-serif;
+  padding: 0;
+  box-sizing: border-box;
 }
 
+/* Navigation styles */
 nav {
-  background-color: lightcoral;
-  overflow: hidden;
+  background-color: aqua;
+  padding: 15px;
 }
 
 nav a {
-  float: left;
-  display: block;
-  color: black;
-  padding: 14px 16px;
-  font-weight: bold;
-  margin-left: 90px;
-  text-align: center;
-  letter-spacing: 3px;
+  margin: 15px;
 }
 
-nav img {
-  height: 30px;
-  width: 30px;
-  text-align: center;
-}
-.container {
-  background-color: pink;
-  height: 700px;
-
-  width: 783px;
-  float: left;
-}
-.image {
-  float: right;
-  /* width: 746px; */
+/* Container for large images */
+.large-container {
+  display: grid;
+  grid-template-columns: 1fr;
 }
 
-.container h1 {
-  margin-top: 100px;
-  letter-spacing: 5px;
-  margin-left: 80px;
-}
-.container p {
-  margin-left: 80px;
-  margin-top: 0px;
+.large-container img {
+  width: 100%;
+  height: auto;
 }
 
-button {
-  margin-left: 80px;
-  padding: 10px;
-  background-color: indianred;
-  width: 200px;
+/* Container for small images */
+.second-container {
+  display: grid;
+  grid-template-columns: 1fr;
 }
 
-.image-thrid {
-  float: right;
-  margin-right: 750px;
-  margin-top: -255px;
-}
-.images-total {
-  margin-top: 705px;
-  background-color: pink;
+.right {
+  background-color: beige;
+  padding: 50px;
 }
 
-.click-container {
-  display: flex;
-  align-items: center;
-  margin-top: 10px;
+.second-container img {
+  width: 100%;
+  /* height: 150px; */
 }
 
-.click-container img {
-  margin-left: 10px;
-  margin-top: -20px;
+/* Grid layout for small images */
+.left {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
 }
 
-.click-container p {
-  margin-left: 80px;
-}
-
-.last-one {
-  background-color: indianred;
-  width: 350px;
-  height: 200px;
-
-  margin-left: 800px;
-  position: relative;
-  top: -350px;
-}
-.last-one p {
-  margin-top: 200px;
-  margin-left: 5px;
-}
-.click-container p {
-  margin-top: -5px;
-}
-
-.image-one {
-  position: relative;
-  top: 115px;
-  margin-left: 350px;
-}
-
-.image-second {
-  position: relative;
-  top: 120px;
-  margin-left: 350px;
-}
-.last-one h1 {
-  letter-spacing: 5px;
-}
-button{
-  color: white;
-  border: none;
-}
-
-@media screen and (min-width: 480px) {
-}
-
+/* Media query for responsiveness */
 @media screen and (min-width: 768px) {
+  .large-container {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .second-container {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .left {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "image1 image2"
+      "image3 image2";
+  }
+
+  .image1 {
+    grid-area: image1;
+  }
+
+  .image2 {
+    grid-area: image2;
+  }
+
+  .image3 {
+    grid-area: image3;
+  }
 }
